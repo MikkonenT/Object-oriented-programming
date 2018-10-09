@@ -7,10 +7,13 @@ using namespace std;
 int main() {
 
 	Student Johndoe;
-	Johndoe.printName = "John Doe";
-	Johndoe.printName();
+	Johndoe.SetId("B12345");
+	Johndoe.SetName("John Doe");
 
-	cout << "Student details" << endl;
+	std::string Id = Johndoe.GetId();
+	std::string name = Johndoe.GetName();
+
+	cout << "Student details" << Id << " " << name<< endl;
 
 	return 0;
 }
