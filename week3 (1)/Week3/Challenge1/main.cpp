@@ -6,7 +6,9 @@ using namespace std;
 
 int main() {
 
-	Student Jane{ "Jane Doe", "B12345", "computing", 3, 50 };
+	Student Jane{ "Jane Doe", "B12345", "computing", 3, 5, 20, 20, 20};
+
+	Student Billy{ "Billy Bragg", "B00578985", "Music Theory", 3, 5, 87, 92, 47 };
 
 	Student Johndoe;
 	Johndoe.SetId("B12345");

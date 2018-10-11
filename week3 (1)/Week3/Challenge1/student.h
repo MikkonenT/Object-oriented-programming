@@ -13,10 +13,12 @@ public:
 	//Default constructor
 	Student();
 
-	//Custom constructor
+	//Custom constructor1 
 	explicit Student(std::string name);
 
-	Student(std::string name, std::string ID, std::string course, int year, int credits);
+
+	//Custom constructor2
+	Student(std::string name, std::string ID, std::string course, int year, int credits, int ModuleOneMark, int ModuleTwoMark, int ModuleThreeMark);
 
 	//Getters and setters
 	void SetName(std::string name);
@@ -31,4 +33,12 @@ public:
 	void SetCourse(std::string course);
 	std::string GetCourse() const;
 
+	void SetMark1(int ModuleOneMark);
+	int GetMark1() const;
+	
+	void SetMark2(int ModuleTwoMark);
+	int GetMark2() const;
+
+	void SetMark3(int ModuleThreeMark);
+	int GetMark3() const;
 };

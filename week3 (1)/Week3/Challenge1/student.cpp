@@ -15,9 +15,9 @@ Student::Student(std::string name)
 	std::cout << name_ << " is alive" << std::endl;
 }
 
-Student::Student(std::string name, std::string ID, std::string course, int year, int credits)
-	: name_{ name }, ID_{ ID }, course_{ course }, year_{ year }, credits_{ credits }{
-	std::cout << name_ << " " << ID_<< " " << course_ << " " << year_ << " " << credits_ << std::endl;
+Student::Student(std::string name, std::string ID, std::string course, int year, int credits, int ModuleOneMark, int ModuleTwoMark, int ModuleThreeMark)
+	: name_{ name }, ID_{ ID }, course_{ course }, year_{ year }, credits_{ credits }, ModuleOneMark_{ ModuleOneMark }, ModuleTwoMark_{ ModuleTwoMark }, ModuleThreeMark_{ ModuleThreeMark }{
+	std::cout << name_ << " " << ID_<< " " << course_ << " " << year_ << " " << credits_ << " " << ModuleOneMark_ << " " << ModuleTwoMark_ << " " << ModuleThreeMark_ << std::endl;
 }
 
 //Getters and setters
@@ -55,9 +55,23 @@ std::string Student::GetCourse() const {
 
 //Module marks
 
-void Student::SetCourse(std::string course) {
-	course_ = course;
+void Student::SetMark1(int ModuleOneMark) {
+	ModuleOneMark_ = ModuleOneMark;
 }
-std::string Student::GetCourse() const {
-	return course_;
+int Student::GetMark1() const {
+	return ModuleOneMark_;
+}
 
+void Student::SetMark2(int ModuleTwoMark) {
+	ModuleTwoMark_ = ModuleTwoMark;
+}
+int Student::GetMark2() const {
+	return ModuleTwoMark_;
+}
+
+void Student::SetMark3(int ModuleThreeMark) {
+	ModuleThreeMark_ = ModuleThreeMark;
+}
+int Student::GetMark3() const {
+	return ModuleThreeMark_;
+}
