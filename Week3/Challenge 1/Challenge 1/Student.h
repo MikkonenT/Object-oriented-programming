@@ -11,9 +11,12 @@ private:
 public:
 
 	//Default constructor
-	/*Student();
+	Student();
 
-	//Custom constructor 1
+	explicit Student(std::string name);
+	//explicit Student(std::string ID);
+
+	/*Custom constructor 1
 	explicit Student(std::string name)
 		:name_{"Billy Bragg"} {
 		//Initialise name

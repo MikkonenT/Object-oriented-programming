@@ -3,15 +3,21 @@
 #include "Student.h"
 
 //Non-default constructor
-/*Student::Student(std::string name) {
-	:name_{name}
+Student::Student(std::string name) 
+	:name_{ name } {
+	std::cout << name_ << " is alive" << std::endl;
+}
+/*Student::Student(std::string ID)
+	: ID_{ ID } {
+	std::cout << ID_ << " is this much" << std::endl;*/
 
-}*/
 
 
 
-
-
+/*Student::Student() {
+	std::cout << name_ << " is alive" << std::endl;
+}
+*/
 //Getters and setters
 
 //Name
@@ -44,6 +50,7 @@ void Student::SetCourse(std::string course) {
 }
 std::string Student::GetCourse() const {
 	return course_;
+}
 
 //Module marks
 
