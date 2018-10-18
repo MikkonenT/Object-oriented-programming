@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
-#include "Module.h"
+#include "module.h"
 
 // Default constructor
 Module::Module()
 {
-	name_ = "";
+	title_ = "";
 
 }
 
@@ -20,7 +20,7 @@ Module::Module(std::string title)
 Module::Module(std::string title, std::string code, int creds, int mark)
 	: title_{ title }, code_{ code }, creds_{ creds }, mark_{ mark }{
 	
-	std::cout << "Title is " << title_ << "And the code is " << code_ << std::endl;
+	std::cout << "Title is " << title_ << " And the code is " << code_ << std::endl;
 }
 
 

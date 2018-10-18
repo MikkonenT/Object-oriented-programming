@@ -9,7 +9,7 @@ Student::Student()
 
 }
 
-//Non-default constructor
+//Non-default constructor 1
 Student::Student(std::string name)
 	:name_{ name } {
 	std::cout << name_ << " is alive" << std::endl;

@@ -9,8 +9,8 @@ int main() {
 
 	//Student Jane{ "Jane Doe", "B12345", "computing", 3, 5, 20, 20, 20};
 
-	/*Student Billy{ "Billy Bragg", "B00578985", "Music Theory", 3, 5, 87, 92, 47 };
-
+	Student Billy{ "Billy Bragg", "B00578985", "Music Theory", 3, 5, 87, 92, 47 };
+	/*
 	Student Johndoe;
 	Johndoe.SetId("B12345");
 	Johndoe.SetName("John Doe");
@@ -21,7 +21,6 @@ int main() {
 	cout << "Student details " << Id << " " << name << endl;*/
 	std::cout << "" << std::endl;
 
-	//Module class implementation
 	Module Cpp{ "Cplusplus", "COM1234", 25, 60 };
 
 
