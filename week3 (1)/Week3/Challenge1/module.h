@@ -23,7 +23,17 @@ public:
 
 	//Getters and setters
 
+	void SetTitle(std::string title);
+	std::string GetTitle() const;
 
+	void SetCode(std::string code);
+	std::string GetCode() const;
+
+	void SetCreds(int creds);
+	int GetCreds() const;
+
+	void SetMark(int mark);
+	int GetMark() const;
 
 
 };

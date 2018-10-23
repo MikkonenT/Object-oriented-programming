@@ -2,6 +2,7 @@
 #include <string>
 #include "student.h"
 #include "module.h"
+#include <vector>
 
 //using namespace std;
 
@@ -9,7 +10,9 @@ int main() {
 
 	//Student Jane{ "Jane Doe", "B12345", "computing", 3, 5, 20, 20, 20};
 
-	Student Billy{ "Billy Bragg", "B00578985", "Music Theory", 3, 5, 87, 92, 47 };
+	std::vector<int> marks;
+
+	Student Billy{ "Billy Bragg", "B00578985", "Music Theory", 3, 5, marks};
 	/*
 	Student Johndoe;
 	Johndoe.SetId("B12345");

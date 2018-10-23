@@ -1,12 +1,15 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <vector>
 
 class Student {
 	//Data members private
 private:
 	std::string ID_, name_, course_;
-	int year_, credits_, ModuleOneMark_, ModuleTwoMark_, ModuleThreeMark_;
+	int year_, credits_;
+	std::vector<int> marks_;
+
 
 public:
 
@@ -18,7 +21,7 @@ public:
 
 
 	//Custom constructor2
-	Student(std::string name, std::string ID, std::string course, int year, int credits, int ModuleOneMark, int ModuleTwoMark, int ModuleThreeMark);
+	Student(std::string name, std::string ID, std::string course, int year, int credits, std::vector<int> marks);
 
 	//Getters and setters
 	void SetName(std::string name);
@@ -33,12 +36,7 @@ public:
 	void SetCourse(std::string course);
 	std::string GetCourse() const;
 
-	void SetMark1(int ModuleOneMark);
-	int GetMark1() const;
-	
-	void SetMark2(int ModuleTwoMark);
-	int GetMark2() const;
+	void SetMarks(std::vector<int> marks);
+	std::vector<int> GetMarks() const;
 
-	void SetMark3(int ModuleThreeMark);
-	int GetMark3() const;
 };
